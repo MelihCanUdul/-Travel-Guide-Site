@@ -1,0 +1,856 @@
+<html lang=”tr”>
+ 
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/hover.css">
+    
+    <!--BEĞENİ İÇİN-->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Latest compiled and minified CSS -->
+    
+    <!-- İCONLAR-->
+    
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+   
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   
+    <!--Google icon-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+<!--Font Awesome 5 icon-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+    
+    </head>
+<body>
+    
+   <div class="navbar navbar-dark navbar-expand-lg fixed-top" style="background-color: #060689">
+        <div class="container">	<a class="navbar-brand" href="index.html">
+					<img src="images/logo4.png" style="width: 80%;">
+				</a>
+				<button class="btn btn-primary navbar-toggler" data-toggle="collapse" data-target="#navcl"><span class="navbar-toggler-icon "></span></button>
+				<div class="collapse navbar-collapse" id="navcl">
+                   
+                    
+					<ul class="navbar-nav" style="width: 100%;padding: 17px">
+                        
+                        <li class="nav-item "><a class="nav-link" href="index.html" ><p style="font-size:15px;font-weight: bold">ANASAYFA</p></a></li>
+                        
+                       
+                        <li class="nav-item "><a class="nav-link" href="konaklama.html"><p style="font-size:15px;font-weight: bold">KONAKLAMA</p></a></li>
+                        <li class="nav-item  "><a class="nav-link" href="galeri.html"><p style="font-size:15px;font-weight: bold">GALERİ</p></a></li>
+                        <li class="nav-item "><a class="nav-link" href="seyahat.html"><p style="font-size:15px;font-weight: bold">SEYAHAT</p></a></li>
+						<li class="nav-item"><a class="nav-link" href="gezginler.html"><p style="font-size:15px;font-weight: bold">GEZGİNLER</p></a></li>
+                         <li class="nav-item active"><a class="nav-link" href="tur.html"><p style="font-size:15px;font-weight: bold">TUR</p></a></li>
+                             <li class="nav-item  "><a class="nav-link" href="giris.html"><p style="font-size:15px;font-weight: bold">GİRİŞ YAP</p></a></li>
+                             <li class="nav-item  "><a class="nav-link" href="kay%C4%B1tol.html"><p style="font-size:15px;font-weight: bold">KAYIT OL</p></a></li>
+                    </ul>
+						
+				
+				</div>
+			</div>
+       		</div>	
+<br><br><br><br><br>
+    
+   <style>
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #060689;
+  width: 30%;
+  height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: white;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #060689;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: RED;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;s
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 1140px;
+    border: 2px solid gray;
+    overflow: auto;
+}           
+</style>                
+    
+    <div class="container">
+        <center>
+            <br>
+    <hr>
+          <center><h1><b>TÜRKİYE'DEKİ TÜM TURLAR</b></h1></center>
+            <hr style="background-color: #060689">
+            <br>
+</center>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'marmara')" id="defaultOpen">MARMARA BÖLGESİ</button>
+  <button class="tablinks" onclick="openCity(event, 'akdeniz')">AKDENİZ BÖLGESİ</button>
+  <button class="tablinks" onclick="openCity(event, 'karadeniz')">KARADENİZ BÖLGESİ</button>
+     
+  <button class="tablinks" onclick="openCity(event, 'ege')">EGE BÖLGESİ</button>
+  <button class="tablinks" onclick="openCity(event, 'dogu')">DOĞU ANADOLU BÖLGESİ</button>
+      <button class="tablinks" onclick="openCity(event, 'guney')">GÜNEYDOĞU ANADOLU BÖLGESİ</button>
+      <button class="tablinks" onclick="openCity(event, 'ic')">İÇ ANADOLU BÖLGESİ</button>
+    
+    <br>
+     <div class="container" style="float: left;left: 0">
+
+  <div class="card " style="width:100%">
+    <img class="card-img-top" src="images/u%C3%A7ak%206-4.jpg" alt="Card image" style="width:100%">
+ 
+      
+     
+      <a href="https://www.obilet.com/" class="btn" style="background-color: #060689;color:white">UÇAK BİLETİ</a>
+  
+  </div>
+
+  <div class="card " style="width:100%">
+    <img class="card-img-top" src="images/otobs%C3%BCs%206-4.jpg" alt="Card image" style="width:100%">
+ 
+      
+     
+      <a href="https://www.obilet.com/" class="btn " style="background-color: #060689;color:White">OTOBÜS BİLETİ</a>
+  
+  </div>
+
+   
+
+  <div class="card " style="width:100%">
+    <img class="card-img-top" src="images/di%C4%9Fer%206-4.jpg" alt="Card image" style="width:100%">
+ 
+      
+     
+      <a href="https://www.obilet.com/" class="btn " style="background-color: #060689;color:white">DİĞER BİLETLER</a>
+  
+  </div>
+</div>
+</div>
+        
+        
+        
+<!--marmara için-->  
+        
+<div id="marmara" class="tabcontent">
+ 
+        <div class="row">
+            
+  <div class="col-lg-6 col-md-6 col-sm-12">  
+  	<div class="card" style="width:100%;">
+						<img class="card-img" src="images/%C4%B0STANBUL%204-4.jpg"/>
+						<div class="card-body">
+							<h4 class="card-title" style="font-family: sans-serif; text-align: center;">İSTANBUL TURU</h4>
+							<p style="text-align: center;" class="card-text">Büyük İstanbul  Turu <br>
+Tur Tarihi : 22.05.2019 - 25.05.2019
+</p>
+                            <center><a href="https://tur.gezimanya.com/turkiye-turlari"><button class="btn " style="background-color: #060689;color:white" >DETAYLI BİLGİ İÇİN TIKLAYINIZ</button></a></center>
+						</div>
+					</div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12"> 
+   
+
+	<div class="card" style="width:100%;">
+						<img class="card-img" src="images/G%C3%96KCEADA%204-4.jpg"/>
+						<div class="card-body">
+							<h4 class="card-title" style="font-family: sans-serif; text-align: center;">GÖKÇEADA TUR</h4>
+							<p style="text-align: center;" class="card-text">
+                                Mini Gökçeada Turu<br>
+                                Tur Tarihi : 07.06.2019 - 09.06.2019</p>
+							<center><a href="https://tur.gezimanya.com/canakkale-turlari"><button class="btn" style="background-color: #060689;color:white">DETAYLI BİLGİ İÇİN TIKLAYINIZ</button></a></center>
+						</div>
+					</div>
+          </div>
+          
+    </div><br><br>
+          <div class="row">
+            
+  <div class="col-lg-6 col-md-6 col-sm-12">  
+ 
+	<div class="card" style="width:100%;">
+						<img class="card-img" src="images/BURSA%20G%C3%96L%204-4.jpg"/>
+						<div class="card-body">
+							<h4 class="card-title" style="font-family: sans-serif; text-align: center;">BURSA TUR</h4>
+							<p style="text-align: center;" class="card-text">
+                                Mini Gölyazı Turu<br>
+                               Tur Tarihi : 15.06.2019 - 15.06.2019</p>
+							<center><a href="https://tur.gezimanya.com/bursa-turlari"><button class="btn" style="background-color: #060689;color:white">DETAYLI BİLGİ İÇİN TIKLAYINIZ</button></a></center>
+						</div>
+					</div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12"> 
+   
+
+<div class="card" style="width:100%;">
+						<img class="card-img" src="images/ED%C4%B0RNE%20TUR%204-4.jpg"/>
+						<div class="card-body">
+							<h4 class="card-title" style="font-family: sans-serif; text-align: center;">EDİRNE TUR</h4>
+							<p style="text-align: center;" class="card-text">Günübirlik Edirne
+                                 Turu<br>
+                               Tur Tarihi : 15.06.2019 - 15.06.2019</p>
+							<center><a href="https://tur.gezimanya.com/edirne-turlari"><button class="btn" style="background-color: #060689;color:white">DETAYLI BİLGİ İÇİN TIKLAYINIZ</button></a></center>
+						</div>
+					</div>
+          </div>
+          
+    </div>
+</div>
+        
+        <!--marmara bitiş-->
+        
+        
+        <!-- akdeniz başlangıç-->
+<div id="akdeniz" class="tabcontent">
+    
+     <br><br>
+        <div class="row">
+            
+  <div class="col-lg-6 col-md-6 col-sm-12">  
+  	<div class="card" style="width:100%;">
+						<img class="card-img" src="images/antalya%20tur%204-4.jpg"/>
+						<div class="card-body">
+							<h4 class="card-title" style="font-family: sans-serif; text-align: center;">ANTALYA TURU</h4>
+							<p style="text-align: center;" class="card-text">Akdeniz Turu - Antalya'dan Başlar<br>
+Tur Tarihi : 26.05.2019 - 01.06.2019
+</p>
+                            <center><a href="https://tur.gezimanya.com/antalya-turlari"><button class="btn " style="background-color: #060689;color:white" >DETAYLI BİLGİ İÇİN TIKLAYINIZ</button></a></center>
+						</div>
+					</div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12"> 
+   
+
+	<div class="card" style="width:100%;">
+						<img class="card-img" src="images/budape%C5%9Fte%20tur%204-4.jpg"/>
+						<div class="card-body">
+							<h4 class="card-title" style="font-family: sans-serif; text-align: center;">ADANA TUR</h4>
+							<p style="text-align: center;" class="card-text">
+                             Adana'dan Budapeşte Turu<br>
+
+Tur Tarihi : 23.05.2019 - 26.05.2019</p>
+							<center><a href="https://tur.gezimanya.com/adana-turlari"><button class="btn" style="background-color: #060689;color:white">DETAYLI BİLGİ İÇİN TIKLAYINIZ</button></a></center>
+						</div>
+					</div>
+          </div>
+          
+    </div><br><br>
+          <div class="row">
+            
+  <div class="col-lg-6 col-md-6 col-sm-12">  
+ 
+	<div class="card" style="width:100%;">
+						<img class="card-img" src="images/yayala%20tur%204-4-.jpg"/>
+						<div class="card-body">
+							<h4 class="card-title" style="font-family: sans-serif; text-align: center;">MERSİN TURU</h4>
+							<p style="text-align: center;" class="card-text">
+                               Karadeniz Yaylaları Turu<br>
+Tur Tarihi : 20.07.2019 - 26.07.2019</p>
+							<center><a href="https://tur.gezimanya.com/mersin-turlari"><button class="btn" style="background-color: #060689;color:white">DETAYLI BİLGİ İÇİN TIKLAYINIZ</button></a></center>
+						</div>
+					</div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12"> 
+   
+
+<div class="card" style="width:100%;">
+						<img class="card-img" src="images/burdur%20tur%204-4.jpg"/>
+						<div class="card-body">
+							<h4 class="card-title" style="font-family: sans-serif; text-align: center;">BURDUR TUR</h4>
+							<p style="text-align: center;" class="card-text">Salda Gölü Turu<br>
+Tur Tarihi : 01.07.2019 - 03.07.2019</p>
+							<center><a href="https://tur.gezimanya.com/burdur-turlari"><button class="btn" style="background-color: #060689;color:white">DETAYLI BİLGİ İÇİN TIKLAYINIZ</button></a></center>
+						</div>
+					</div>
+          </div>
+          
+    </div>
+</div>
+<!-- akdeniz bitiş-->
+        
+        
+        
+        
+        
+        
+        
+        
+        <!-- kardeniz başlangıç-->
+<div id="karadeniz" class="tabcontent"><br><br>
+           <div class="row">
+            
+  <div class="col-lg-6 col-md-6 col-sm-12">  
+ 
+	<div class="card" style="width:100%;">
+						<img class="card-img" src="images/artvin%20yayla%204-4.jpg"/>
+						<div class="card-body">
+							<h4 class="card-title" style="font-family: sans-serif; text-align: center;">ARTVİN TURU</h4>
+							<p style="text-align: center;" class="card-text">
+                               Artvin Yaylaları Turu<br>
+Tur Tarihi : 20.07.2019 - 26.07.2019</p>
+							<center><a href="https://tur.gezimanya.com/artvin-turlari"><button class="btn" style="background-color: #060689;color:white">DETAYLI BİLGİ İÇİN TIKLAYINIZ</button></a></center>
+						</div>
+					</div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12"> 
+   
+
+<div class="card" style="width:100%;">
+						<img class="card-img" src="images/yedig%C3%B6ller%20bart%C4%B1n.jpg"/>
+						<div class="card-body">
+							<h4 class="card-title" style="font-family: sans-serif; text-align: center;">BARTIN TUR</h4>
+							<p style="text-align: center;" class="card-text">Yedigöller Turu<br>
+Tur Tarihi : 04.06.2019 - 07.06.2019</p>
+							<center><a href="https://tur.gezimanya.com/bartin-turlari"><button class="btn" style="background-color: #060689;color:white">DETAYLI BİLGİ İÇİN TIKLAYINIZ</button></a></center>
+						</div>
+					</div>
+          </div>
+          
+    </div>
+    <br><br>
+             <div class="row">
+            
+  <div class="col-lg-6 col-md-6 col-sm-12">  
+ 
+	<div class="card" style="width:100%;">
+						<img class="card-img" src="images/KARADEN%C4%B0Z%20TURU.jpg"/>
+						<div class="card-body">
+							<h4 class="card-title" style="font-family: sans-serif; text-align: center;">KARADENİZ TUR</h4>
+							<p style="text-align: center;" class="card-text">
+                              Karadeniz Yaylalar<br>
+Tur Tarihi : 24.05.2019 - 30.05.2019</p>
+							<center><a href="https://tur.gezimanya.com/karadeniz-turlari"><button class="btn" style="background-color: #060689;color:white">DETAYLI BİLGİ İÇİN TIKLAYINIZ</button></a></center>
+						</div>
+					</div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12"> 
+   
+
+<div class="card" style="width:100%;">
+						<img class="card-img" src="images/BATUM%20TUR.jpg"/>
+						<div class="card-body">
+							<h4 class="card-title" style="font-family: sans-serif; text-align: center;">BATUM TUR</h4>
+							<p style="text-align: center;" class="card-text"> Batum Turu<br>
+Tur Tarihi : 31.05.2019 - 07.06.2019</p>
+							<center><a href="https://tur.gezimanya.com/trabzon-turlari"><button class="btn" style="background-color: #060689;color:white">DETAYLI BİLGİ İÇİN TIKLAYINIZ</button></a></center>
+						</div>
+					</div>
+          </div>
+          
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</div>
+        
+        
+        
+        <!-- kardeniz bitiş-->
+        
+        
+        <!-- EGE BASLANGIC-->
+        <div id="ege" class="tabcontent">
+             <br><br>
+             <div class="row">
+            
+  <div class="col-lg-6 col-md-6 col-sm-12">  
+ 
+	<div class="card" style="width:100%;">
+						<img class="card-img" src="images/BODRUM%20DAT%C3%87A%204-4.jpg"/>
+						<div class="card-body">
+							<h4 class="card-title" style="font-family: sans-serif; text-align: center;">AYDIN TURU</h4>
+							<p style="text-align: center;" class="card-text">
+                              Datça Turu <br>
+Tur Tarihi : 10.06.2019 - 14.06.2019</p>
+							<center><a href="https://tur.gezimanya.com/aydin-turlari"><button class="btn" style="background-color: #060689;color:white">DETAYLI BİLGİ İÇİN TIKLAYINIZ</button></a></center>
+						</div>
+					</div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12"> 
+   
+
+<div class="card" style="width:100%;">
+						<img class="card-img" src="images/BODRUM%20G%C3%96KOVA.jpg"/>
+						<div class="card-body">
+							<h4 class="card-title" style="font-family: sans-serif; text-align: center;">BODRUM TUR</h4>
+							<p style="text-align: center;" class="card-text"> Gökova - Bodrum Turu <br>
+Tur Tarihi : 01.06.2019 - 08.06.2019</p>
+							<center><a href="https://tur.gezimanya.com/bodrum-turlari"><button class="btn" style="background-color: #060689;color:white">DETAYLI BİLGİ İÇİN TIKLAYINIZ</button></a></center>
+						</div>
+					</div>
+          </div>
+          
+    </div>
+            
+       <br>
+             <div class="row">
+            
+  <div class="col-lg-6 col-md-6 col-sm-12">  
+ 
+	<div class="card" style="width:100%;">
+						<img class="card-img" src="images/%C4%B0ZM%C4%B0R%20ALA%C3%87ATI%204-4.jpg"/>
+						<div class="card-body">
+							<h4 class="card-title" style="font-family: sans-serif; text-align: center;">İZMİR TUR</h4>
+							<p style="text-align: center;" class="card-text">
+                            Alaçatı Turu<br>
+Tur Tarihi : 24.05.2019 - 26.05.2019</p>
+							<center><a href="https://tur.gezimanya.com/izmir-turlari"><button class="btn" style="background-color: #060689;color:white">DETAYLI BİLGİ İÇİN TIKLAYINIZ</button></a></center>
+						</div>
+					</div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12"> 
+   
+
+<div class="card" style="width:100%;">
+						<img class="card-img" src="images/FETH%C4%B0YE%204-4.jpg"/>
+						<div class="card-body">
+							<h4 class="card-title" style="font-family: sans-serif; text-align: center;">MUĞLA TUR</h4>
+							<p style="text-align: center;" class="card-text"> Fethiye Turu <br>
+Tur Tarihi : 25.05.2019 - 01.06.2019</p>
+							<center><a href="https://tur.gezimanya.com/marmaris-turlari"><button class="btn" style="background-color: #060689;color:white">DETAYLI BİLGİ İÇİN TIKLAYINIZ</button></a></center>
+						</div>
+					</div>
+          </div>
+          
+    </div>
+            
+            
+  
+</div>
+        
+
+        <!-- EGE BİTİŞ-->
+        
+        
+        
+        
+        
+        <!-- doğu anadolu turları-->
+        <div id="dogu" class="tabcontent">
+            <br><br>
+                   <div class="row">
+            
+  <div class="col-lg-6 col-md-6 col-sm-12">  
+ 
+	<div class="card" style="width:100%;">
+						<img class="card-img" src="images/DO%C4%9EU%20ANADOLU%20TUR.jpg"/>
+						<div class="card-body">
+							<h4 class="card-title" style="font-family: sans-serif; text-align: center;">DOĞU TURU</h4>
+							<p style="text-align: center;" class="card-text">
+                           Doğu Anadolu Turu<br>
+Tur Tarihi : 23.06.2019 - 29.06.2019</p>
+							<center><a href="https://tur.gezimanya.com/agri-turlari"><button class="btn" style="background-color: #060689;color:white">DETAYLI BİLGİ İÇİN TIKLAYINIZ</button></a></center>
+						</div>
+					</div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12"> 
+   
+
+<div class="card" style="width:100%;">
+						<img class="card-img" src="images/DO%C4%9EU%20HAZ%C4%B0NELER%C4%B0%20TURU.jpg"/>
+						<div class="card-body">
+							<h4 class="card-title" style="font-family: sans-serif; text-align: center;">DOĞU TURU</h4>
+							<p style="text-align: center;" class="card-text"> Doğu Hazineleri Turu<br>
+Tur Tarihi : 23.08.2019 - 30.08.2019</p>
+							<center><a href="https://tur.gezimanya.com/elazig-turlari"><button class="btn" style="background-color: #060689;color:white">DETAYLI BİLGİ İÇİN TIKLAYINIZ</button></a></center>
+						</div>
+					</div>
+          </div>
+          
+    </div>
+           <br>
+                   <div class="row">
+            
+  <div class="col-lg-6 col-md-6 col-sm-12">  
+ 
+	<div class="card" style="width:100%;">
+						<img class="card-img" src="images/van%20turu.jpg"/>
+						<div class="card-body">
+							<h4 class="card-title" style="font-family: sans-serif; text-align: center;">VAN TURU</h4>
+							<p style="text-align: center;" class="card-text">
+                           Van Havzası Turu<br>
+Tur Tarihi : 17.06.2019 - 22.06.2019</p>
+							<center><a href="https://tur.gezimanya.com/agri-turlari"><button class="btn" style="background-color: #060689;color:white">DETAYLI BİLGİ İÇİN TIKLAYINIZ</button></a></center>
+						</div>
+					</div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12"> 
+   
+
+<div class="card" style="width:100%;">
+						<img class="card-img" src="images/GAP%20TUR.jpg"/>
+						<div class="card-body">
+							<h4 class="card-title" style="font-family: sans-serif; text-align: center;">GAP TUR</h4>
+							<p style="text-align: center;" class="card-text"> Uçaklı Gap Turu<br>
+Tur Tarihi : 26.05.2019 - 30.05.2019</p>
+							<center><a href="https://tur.gezimanya.com/adiyaman-turlari"><button class="btn" style="background-color: #060689;color:white">DETAYLI BİLGİ İÇİN TIKLAYINIZ</button></a></center>
+						</div>
+					</div>
+          </div>
+          
+    </div>
+           
+            
+            
+
+</div>
+        
+        <!-- dogu anadolu turları biitiş-->
+        
+        
+        
+        
+        
+        
+        <!-- güney doğu anadolu-->
+        <div id="guney" class="tabcontent">
+  <br><br>
+            
+            <div class="row">
+            
+  <div class="col-lg-6 col-md-6 col-sm-12">  
+ 
+	<div class="card" style="width:100%;">
+						<img class="card-img" src="images/mardin%20tur.jpeg"/>
+						<div class="card-body">
+							<h4 class="card-title" style="font-family: sans-serif; text-align: center;">MARDİN TURU</h4>
+							<p style="text-align: center;" class="card-text">
+                          Butik Mardin Turu<br>
+Tur Tarihi : 24.05.2019 - 26.05.2019</p>
+							<center><a href="https://tur.gezimanya.com/mardin-turlari"><button class="btn" style="background-color: #060689;color:white">DETAYLI BİLGİ İÇİN TIKLAYINIZ</button></a></center>
+						</div>
+					</div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12"> 
+   
+
+<div class="card" style="width:100%;">
+						<img class="card-img" src="images/GAP%20TUR.jpg"/>
+						<div class="card-body">
+							<h4 class="card-title" style="font-family: sans-serif; text-align: center;">GAP TURU</h4>
+							<p style="text-align: center;" class="card-text">Anadolu - Gap Turu<br>
+Tur Tarihi : 01.06.2019 - 11.06.2019</p>
+							<center><a href="https://tur.gezimanya.com/adiyaman-turlari"><button class="btn" style="background-color: #060689;color:white">DETAYLI BİLGİ İÇİN TIKLAYINIZ</button></a></center>
+						</div>
+					</div>
+          </div>
+          
+    </div><br>
+            <div class="row">
+            
+  <div class="col-lg-6 col-md-6 col-sm-12">  
+ 
+	<div class="card" style="width:100%;">
+						<img class="card-img" src="images/batman%20tur.jpg"/>
+						<div class="card-body">
+							<h4 class="card-title" style="font-family: sans-serif; text-align: center;">BATMAN TURU</h4>
+							<p style="text-align: center;" class="card-text">
+                           Batman Turu<br>
+Tur Tarihi : 02.06.2019 - 05.06.2019</p>
+							<center><a href="https://tur.gezimanya.com/batman-turlari"><button class="btn" style="background-color: #060689;color:white">DETAYLI BİLGİ İÇİN TIKLAYINIZ</button></a></center>
+						</div>
+					</div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12"> 
+   
+
+<div class="card" style="width:100%;">
+						<img class="card-img" src="images/%C5%9EANLIURFA%20TUR.jpg"/>
+						<div class="card-body">
+							<h4 class="card-title" style="font-family: sans-serif; text-align: center;">ŞANLIURFA TURU</h4>
+							<p style="text-align: center;" class="card-text">Şanlıurfa Turu<br>
+Tur Tarihi : 24.05.2019 - 26.05.2019</p>
+							<center><a href="https://tur.gezimanya.com/adiyaman-turlari"><button class="btn" style="background-color: #060689;color:white">DETAYLI BİLGİ İÇİN TIKLAYINIZ</button></a></center>
+						</div>
+					</div>
+          </div>
+          
+    </div>
+            
+            
+            
+            
+            
+            
+            
+            
+</div>
+    
+        
+        <!-- guney doğu anadolu biitş-->
+        
+        
+        
+        <!-- İÇ ANADOLO BAŞLANGIÇ-->
+        
+            <div id="ic" class="tabcontent">
+
+                
+                <br><br>
+                         <div class="row">
+            
+  <div class="col-lg-6 col-md-6 col-sm-12">  
+ 
+	<div class="card" style="width:100%;">
+						<img class="card-img" src="images/BALKAN%20TURU.jpg"/>
+						<div class="card-body">
+							<h4 class="card-title" style="font-family: sans-serif; text-align: center;">ANKARA TURU</h4>
+							<p style="text-align: center;" class="card-text">
+                          Balkanlar Turu <br>
+Tur Tarihi : 01.06.2019 - 09.06.2019</p>
+							<center><a href="https://tur.gezimanya.com/ankara-turlari"><button class="btn" style="background-color: #060689;color:white">DETAYLI BİLGİ İÇİN TIKLAYINIZ</button></a></center>
+						</div>
+					</div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12"> 
+   
+
+<div class="card" style="width:100%;">
+						<img class="card-img" src="images/prag%20turu.jpg"/>
+						<div class="card-body">
+							<h4 class="card-title" style="font-family: sans-serif; text-align: center;">KONYA TURU</h4>
+							<p style="text-align: center;" class="card-text">Konya'dan Prag Turu<br>
+Tur Tarihi : 11.07.2019 - 14.07.2019</p>
+							<center><a href="https://tur.gezimanya.com/konya-turlari"><button class="btn" style="background-color: #060689;color:white">DETAYLI BİLGİ İÇİN TIKLAYINIZ</button></a></center>
+						</div>
+					</div>
+          </div>
+          
+    </div>
+            
+           
+                <br>
+                         <div class="row">
+            
+  <div class="col-lg-6 col-md-6 col-sm-12">  
+ 
+	<div class="card" style="width:100%;">
+						<img class="card-img" src="images/KAPADOKYA%20TURU.jpg"/>
+						<div class="card-body">
+							<h4 class="card-title" style="font-family: sans-serif; text-align: center;">NEVŞEHİR TURU</h4>
+							<p style="text-align: center;" class="card-text">
+                         Kapadokya Turu<br>
+Tur Tarihi : 23.05.2019 - 26.05.2019</p>
+							<center><a href="https://tur.gezimanya.com/nevsehir-turlari"><button class="btn" style="background-color: #060689;color:white">DETAYLI BİLGİ İÇİN TIKLAYINIZ</button></a></center>
+						</div>
+					</div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12"> 
+   
+
+<div class="card" style="width:100%;">
+						<img class="card-img" src="images/S%C4%B0VAS%20TUR.jpg"/>
+						<div class="card-body">
+							<h4 class="card-title" style="font-family: sans-serif; text-align: center;">SİVAS</h4>
+							<p style="text-align: center;" class="card-text">Divriği - Sivas Turu<br>
+                                
+                               
+Tur Tarihi : 02.08.2019 - 04.08.2019</p>
+							<center><a href="https://tur.gezimanya.com/sivas-turlari"><button class="btn" style="background-color: #060689;color:white">DETAYLI BİLGİ İÇİN TIKLAYINIZ</button></a></center>
+						</div>
+					</div>
+          </div>
+          
+    </div>
+            
+           
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+</div>
+        
+        
+       <!--İÇ  ANADOLO BİTİŞ-->
+        
+</div>
+    
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+    
+    
+    
+    
+    <br><br><br><br><br>  <br><br><br><br><br>    <br><br><br><br><br>   <br><br><br><br><br>  <br><br><br><br><br>    <br><br><br><br><br>   <br><br><br><br><br>  <br><br><br><br><br>    <br><br><br><br><br>   <br><br><br><br><br>  <br><br><br><br><br>    <br>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+         <!--footer-->
+    <center>
+ 
+    <div class="jumbotron" style="background-color:#060689; color:white ">
+    
+         <div class="row">
+            
+                
+        <div class="col-md-4">              
+     
+         
+          <h6>HAKKIMIZDA</h6>
+            <p style="font-size: 15px;">PUSULA, Türkiye seyahat boşluğunu doldurmak amacıyla 2019 yılında kurulmuş bağımsız bir gezi kuruluşudur.Yüzlerce bölgeye ait notlar,raporlar,yazılar,gidilip görülmesi gereken yerleri sayfa içerisinde paylaşan bir sitedir.</p>
+      <p>PUSULA 	&#169; HAKLI SAKLIDIR.</p>
+            
+           
+       
+ <!-- footer ilk bölüm-->
+             
+             </div>
+              
+
+                <div class="col-md-4" style="width:100%">
+                    
+                <h6>İLETİŞİM</h6>
+                    <div class="id" style="width:100%;">
+                
+                      <i class="fa fa-phone" style="font-size:24px;color:white"></i><p style="font-size: 15px;">0545-411-48-61</p></div>
+                 
+                    <div class="id">
+                
+                      <i class="fa fa-map-marker" style="font-size:24px;color:white"></i><p style="font-size: 15px;">OSMANGAZİ CADDESİ 707 SOKAK NO:8 </div>
+                    <div class="id">
+                
+                       <i class="fas fa-directions" style="font-size:24px;color:white"></i><p style="font-size: 15px;">ESENLER/İSTANBUL </div>
+            </div>
+    
+              <div class="col-md-4" style="width:100%;">
+                  <a href="gizlilik.html" target="_blank" style="text-decoration:none;color:white;">GİZLİLİK POLİTİKASI</a> <br>
+            <a href="duyurular.html" target="_blank" style="text-decoration:none; color:white;"> DUYURULAR</a> <br>
+            
+            <a href="kariyer.html" target="_blank" style="text-decoration:none;color:white;"> KARİYER</a> <br><br><br>
+                   <div class="mel" style="width: 100%;">
+                    <H3>BİZİ TAKİP EDİN</H3>
+                       
+                     <a class="#" href="index.html">
+                        <i class='fab fa-edge' style="font-size:30px; color: white;padding: 15px"></i></a>
+                      <a class="#" href="https://twitter.com/?lang=tr"><i class='fab fa-twitter' style="font-size:30px; color: white;padding: 11px"></i></a>
+                        
+                     <a class="#" href="https://www.facebook.com"><i class='fab fa-facebook' style="font-size:30px; color: white;padding: 11px"></i></a>
+                     <a class="#" href="https://www.linkedin.com"><i class='fab fa-invision' style="font-size:30px; color: white;padding: 20px"></i></a>
+                        <a class="#" href="https://www.instagram.com"> <i class="fa fa-instagram" style="font-size:30px;color:white;padding: 10px"></i></a>
+             </div>
+                  
+                               
+            </div> 
+    
+        
+</div>
+
+
+    </div>
+    </center>
+    <!-- footer bitiş-->
+    
+    <center>
+    
+    <div class="logo" style="width: 300px">
+    <a href="https://gezimanya.com/"><img src="images/geziman.jpg" style="width:30%"></a>
+    <a href="https://www.trivago.com.tr/"><img src="images/TR%C4%B0VAGO.png" style="width:30%"></a>
+    <a href="https://www.obilet.com/"><img src="images/O%20B%C4%B0LET.jpg" style="width:30%"></a>
+        
+        <p style="font-weight: bold">PUSULA Resmi İnternet Sitesi,Gezimania,Trivago ve O-bilet Resmi Siteleriyle Anlaşma İçerisindedir. </p>
+    </div>
+    
+    </center>
+    </body>
+
+
+
+</html>
